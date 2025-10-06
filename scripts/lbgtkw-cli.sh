@@ -27,30 +27,30 @@ echo "Done!"
 echo ""
 
 echo "Installing the blur daemon at /usr/local/bin/"
-cp scripts/lbgtkw-blur-daemon.sh /usr/local/bin
+sudo cp scripts/lbgtkw-blur-daemon.sh /usr/local/bin
 echo "Done!"
 echo ""
 
 echo "Installing the systemd service..."
-cp systemd/lbgtkw-daemon-autostart.service ~/.config/systemd/user/
+sudo cp systemd/lbgtkw-daemon-autostart.service /etc/systemd/system/
 echo "Done!"
 echo ""
 
 echo "Starting the systemd service..."
-systemctl --user daemon-reload
-systemctl --user enable lbgtkw-daemon-autostart.service
-systemctl --user start lbgtkw-daemon-autostart.service
+sudo systemctl --user daemon-reload
+sudo systemctl --user enable lbgtkw-daemon-autostart.service
+sudo systemctl --user start lbgtkw-daemon-autostart.service
 echo "Done!"
 echo ""
 
 echo "Installing the uninstall script at /usr/local/bin/"
-cp scripts/lbgtkw-uninstall.sh /usr/local/bin
+sudo cp scripts/lbgtkw-uninstall.sh /usr/local/bin
 echo "Done!"
 echo ""
 
 echo "Permitting the uninstall script and daemon to become the executable via 'chmod +x' command at /usr/local/bin/"
-chmod +x /usr/local/bin/lbgtkw-uninstall.sh
-chmod +x /usr/local/bin/lbgtkw-blur-daemon.sh
+sudo chmod +x /usr/local/bin/lbgtkw-uninstall.sh
+sudo chmod +x /usr/local/bin/lbgtkw-blur-daemon.sh
 echo "Done!"
 echo ""
 
