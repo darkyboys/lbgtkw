@@ -37,9 +37,9 @@ echo "Done!"
 echo ""
 
 echo "Starting the systemd service..."
-sudo systemctl --user daemon-reload
-sudo systemctl --user enable lbgtkw-daemon-autostart.service
-sudo systemctl --user start lbgtkw-daemon-autostart.service
+sudo systemctl daemon-reload
+sudo systemctl enable lbgtkw-daemon-autostart.service
+sudo systemctl start lbgtkw-daemon-autostart.service
 echo "Done!"
 echo ""
 
