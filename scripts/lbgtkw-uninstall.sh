@@ -13,9 +13,9 @@ echo "Done!"
 echo ""
 
 echo "Disabling the systemd service..."
-sudo systemctl --user disable lbgtkw-daemon-autostart.service
-sudo systemctl --user stop lbgtkw-daemon-autostart.service
-sudo systemctl --user daemon-reload
+sudo systemctl disable lbgtkw-daemon-autostart.service
+sudo systemctl stop lbgtkw-daemon-autostart.service
+sudo systemctl daemon-reload
 echo "Done!"
 echo ""
 
