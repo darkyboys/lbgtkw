@@ -25,7 +25,7 @@ Clone the repository and run the CLI:
 git clone https://github.com/darkyboys/lbgtkw.git
 cd lbgtkw
 chmod +x scripts/lbgtkw-cli.sh
-sudo -E ./scripts/lbgtkw-cli.sh <R> <G> <B> <A>
+./scripts/lbgtkw-cli.sh <R> <G> <B> <A>
 ```
 
 * `<R> <G> <B>` → RGB color for the blur background.
@@ -36,13 +36,13 @@ sudo -E ./scripts/lbgtkw-cli.sh <R> <G> <B> <A>
 ## Uninstallation
 
 ```bash
-sudo -E sudo /usr/local/bin/lbgtkw-uninstall.sh
+/usr/local/bin/lbgtkw-uninstall.sh
 ```
 
 or
 
 ```bash
-sudo -E lbgtkw-uninstall.sh
+lbgtkw-uninstall.sh
 ```
 
 * Restores backups of your GTK3 & GTK4 CSS.
