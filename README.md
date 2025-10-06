@@ -69,8 +69,6 @@ sudo lbgtkw-uninstall.sh
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
-````
-
 ---
 
 ### 3️⃣ LICENSE file (MIT)
